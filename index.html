@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/responsive-style.css">
+    </head>
+    <body>
+            <h1>Resize your screen to see the changes</h1>
+
+            <h1>Different sized images between each breakpoint</h1>
+            <img alt="" class="responsive-images" 
+            data-img-size-binding='[{ "size": 768, "image": "medium"},{"size": 1200, "image": "large"}, {"size": 320, "image": "small"}]' 
+            data-img-small="http://tom-maton.co.uk/images/image-test/bay-bridge-small.jpg" 
+            data-img-medium="http://tom-maton.co.uk/images/image-test/bay-bridge-medium.jpg" 
+            data-img-large="http://tom-maton.co.uk/images/image-test/bay-bridge-large.jpg" />
+
+            <noscript>
+              <img src="http://tom-maton.co.uk/images/image-test/bay-bridge-large.jpg" />
+            </noscript>
+
+            <h1>No image displayed between 320 -> 767</h1>
+            <img alt="" class="responsive-images" 
+            data-img-size-binding='[{ "size": 768, "image": "medium"},{"size": 1200, "image": "large"}, {"size": 320, "image": null}]' 
+            data-img-small="http://tom-maton.co.uk/images/image-test/bay-bridge-small.jpg" 
+            data-img-medium="http://tom-maton.co.uk/images/image-test/bay-bridge-medium.jpg" 
+            data-img-large="http://tom-maton.co.uk/images/image-test/bay-bridge-large.jpg" />
+
+            <noscript>
+              <img src="http://tom-maton.co.uk/images/image-test/bay-bridge-large.jpg" />
+            </noscript>
+
+            <h1>Just one image to be displayed => 768</h1>
+            <img alt="" class="responsive-images" 
+            data-img-size-binding='[{ "size": 768, "image": "medium"}]' 
+            data-img-small="http://tom-maton.co.uk/images/image-test/bay-bridge-small.jpg" 
+            data-img-medium="http://tom-maton.co.uk/images/image-test/bay-bridge-medium.jpg" 
+            data-img-large="http://tom-maton.co.uk/images/image-test/bay-bridge-large.jpg" />
+
+            <noscript>
+              <img src="http://tom-maton.co.uk/images/image-test/bay-bridge-large.jpg" />
+            </noscript>
+
+            <script src="js/responsive-images.js"></script>
+            <script>
+                responsiveImages.init();
+            </script>
+    </body>
+</html
