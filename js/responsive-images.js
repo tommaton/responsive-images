@@ -32,7 +32,7 @@ responsiveImages = (function() {
         
         We set the image to "" so we can prevent it from loading in mobiles if we wish.
       */
-      if(selectedImage !== null) {
+      if(selectedImage !== null && selectedImage !== undefined) {
         elem.src = selectedImage;
       } else {
         elem.src = "";
@@ -72,7 +72,7 @@ responsiveImages = (function() {
             });
         }
         getImageData();
-    };
+    }();
   
   return {
     init: init
