@@ -39,7 +39,7 @@ This will contain an array of objects with the list of image sizes and the data-
 data-img-size-binding='[{ "size": 768, "image": "medium"},{"size": 1200, "image": "large"}, {"size": 320, "image": "small"}]'
 ````
 
-Initating
+Installing
 ----
 
 Include the js file at the bottom of your page and and it wil instantiate itself and perform the image replacements.
